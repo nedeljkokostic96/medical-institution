@@ -1,5 +1,4 @@
 import Person from './Person.js';
-import Patient from './Patient.js';
 import LabaratoryExaminationFactory from '../factories/LaboratoryExaminationFactory.js';
 import Util from '../../util/util.js';
 
@@ -24,7 +23,7 @@ export default class Doctor extends Person{
     }
 
     checkIfCreated(){
-        Util.logContent(`[${Util.currentDateString()} ${Util.currentTimeString()}] Kreiran doktor "${super.checkIfCreated()}"`);
+        //Util.logContent(`[${Util.currentDateString()} ${Util.currentTimeString()}] Kreiran doktor "${super.checkIfCreated()}"`);
         return 'Doktor ' + super.checkIfCreated() + " kreiran!";
     }
 
